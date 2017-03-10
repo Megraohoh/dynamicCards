@@ -1,5 +1,34 @@
 console.log("hello");
 
+//-going to need variables. because when don't we
+//-remember to think of the DOM. 
+//---gonna be grabbing a lot from there
+
+When the user enters in text into the text area and 
+then clicks the create button, create a new card element 
+in the DOM. You decide the height/width of the card.
+
+
+//create button needs to send to DOM
+//DOM shows 'thumbnail' style code on page; determine in css
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //***************************************************
 // CREATE CARD
 //***************************************************
