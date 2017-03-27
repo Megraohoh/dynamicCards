@@ -4,7 +4,7 @@ var createBtn = document.getElementById("createBtn");
 var identifier = 0;
 
 function writeToDom(){
-	identifier += 1
+	identifier += 1;
 	var createCard = "";
 
 	createCard += `<div class="cardArea" id="newCard-${identifier}">`;
@@ -24,5 +24,3 @@ document.body.addEventListener("click", function(e) {
 	}
 
 });
-
-console.log("yo", writeToDom);
