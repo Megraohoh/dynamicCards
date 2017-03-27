@@ -1,42 +1,28 @@
-console.log("hello");
+var containerDiv = document.getElementById("container");
+var inputArea = document.getElementById("inputArea");
+var createBtn = document.getElementById("createBtn");
+var identifier = 0;
 
-//-going to need variables. because when don't we
-//-remember to think of the DOM. 
-//---gonna be grabbing a lot from there
+function writeToDom(){
+	identifier += 1
+	var createCard = "";
 
-When the user enters in text into the text area and 
-then clicks the create button, create a new card element 
-in the DOM. You decide the height/width of the card.
+	createCard += `<div class="cardArea" id="newCard-${identifier}">`;
+	createCard += `<h3>Oh look, your card!!</h3>`;
+	createCard += `<img src="http://cdn.someecards.com/someecards/usercards/programmer-n-proh-gram-er-an-organism-that-turns-caffeine-and-pizza-into-software-8a828.png" alt="someecards programmer joke">`;
+	createCard += `<h3> ${inputArea.value}</h3>`;
+	createCard += `<button class="btn" id="deleteBtn">Delete</button>`;
+	createCard += `</div>`;
+	containerDiv.innerHTML += createCard;
+}
 
+createBtn.addEventListener("click", writeToDom);
 
-//create button needs to send to DOM
-//DOM shows 'thumbnail' style code on page; determine in css
+document.body.addEventListener("click", function(e) {
+	if (event.target.className === "deleteBtn"){
+		event.target.parentNode.remove();	
+	}
 
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//***************************************************
-// CREATE CARD
-//***************************************************
-// When user enters text into <textarea> box 
-// clicks <Create>, function creates a new card
-// (pushes <userInput> text string for new Card to cardArray)
-// then writes the cardHTML to the DOM
-//
-// Displays <alert> to user if clicks <Create> button
-// without entering any text
-//***************************************************
+console.log("yo", writeToDom);
