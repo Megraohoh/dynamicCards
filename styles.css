@@ -1,0 +1,25 @@
+body {
+	background-color: lightgray;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	align-content: flex-start;
+	margin: 15px;
+}
+
+#container {
+	margin: 15px;
+	margin-bottom: 20px;
+}
+
+.cardArea {
+	align-self: align-self: auto | flex-start | flex-end | center | baseline | stretch;
+	margin: 10px;
+}
+
+#newCard {
+	display: inline-block;
+	
+}
