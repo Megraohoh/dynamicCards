@@ -11,7 +11,8 @@
 ### Final Result:
 > All requirements are met.  
 
-![Image of Site]()
+![Image of Site](https://raw.githubusercontent.com/Megraohoh/dynamicCards/dynamicCards/screenshots/Screen%20Shot%202017-04-02%20at%2010.23.52%20PM.png)
+![Image of Site](https://raw.githubusercontent.com/Megraohoh/dynamicCards/dynamicCards/screenshots/Screen%20Shot%202017-04-02%20at%2010.24.09%20PM.png)
 
 ### How to run :
 ```
